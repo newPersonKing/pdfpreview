@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MakeBitmapActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp">
+
+    <TextView
+        android:id="@+id/tv_file_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="选择的文件路径"/>
+
+    <Button
+        android:id="@+id/select_file_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击选择pdf"/>
+
+    <Button
+        android:id="@+id/btn_make_bitmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成普通二维码图片"/>
+
+
+    <ImageView
+        android:id="@+id/image_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:visibility="gone"/>
+
+</LinearLayout>
